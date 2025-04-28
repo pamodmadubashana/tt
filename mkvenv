@@ -1,0 +1,9 @@
+sudo nano /etc/zsh/zshrc
+
+mkvenv() {
+    python -m venv "$1"
+    chmod -R u+x "$1/bin"
+    source "$1/bin/activate"
+}
+
+source /etc/zsh/zshrc
